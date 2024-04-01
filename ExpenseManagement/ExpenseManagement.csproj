@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\about-img.jpg" />
+    <None Include="wwwroot\about-img.png" />
+    <None Include="wwwroot\client1.jpg" />
+    <None Include="wwwroot\client2.jpg" />
+    <None Include="wwwroot\favicon.png" />
+    <None Include="wwwroot\hero-bg.png" />
+    <None Include="wwwroot\next.png" />
+    <None Include="wwwroot\prev.png" />
+    <None Include="wwwroot\s1.png" />
+    <None Include="wwwroot\s2.png" />
+    <None Include="wwwroot\s3.png" />
+    <None Include="wwwroot\slider-bg.jpg" />
+    <None Include="wwwroot\slider-img.png" />
+    <None Include="wwwroot\team-1.jpg" />
+    <None Include="wwwroot\team-2.jpg" />
+    <None Include="wwwroot\team-3.jpg" />
+    <None Include="wwwroot\team-4.jpg" />
+    <None Include="wwwroot\track-bg.jpg" />
+    <None Include="wwwroot\w1.png" />
+    <None Include="wwwroot\w2.png" />
+    <None Include="wwwroot\w3.png" />
+    <None Include="wwwroot\w4.png" />
+  </ItemGroup>
+
+</Project>

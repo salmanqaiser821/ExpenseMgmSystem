@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ExpenseCategoryEntity
+
+@{
+    ViewData["Title"] = "Update existing Expenses Category";
+}
+
+<form method="post" asp-action="Update">
+    <div class="border p-5">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <h2 class="text-black-50 pl-3">Update existing one</h2>
+        </div>
+        <br />
+        <!-- Include a hidden input field to pass the ExpenseId -->
+        <input type="hidden" asp-for="ExpenseCategoryId" />
+
+        <div class=row>
+            <div class="col-4">
+                <label asp-for="ExpenseCategoryName"></label>
+                <input asp-for="ExpenseCategoryName" class="form-control" />
+                <span asp-validation-for="ExpenseCategoryName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="w-12 btn-group" role="group">
+            <input type="submit" class="btn btn-primary mx-1" value="Save" />
+            <a asp-action="Index" class="btn btn-danger mx-1">Back</a>
+        </div>
+    </div>
+
+</form>
